@@ -27,8 +27,8 @@ class InfiniProvider : PagedGifProvider() {
             try {
                 val encoded = URLEncoder.encode(query.replace(" ", "-"), "UTF-8")
 
-                // for some reason page starts at 2
-                val url = URL("https://infini.wtf/search/$encoded?format=turbo_stream&media_type=gifs&nsfw=true&page=${page + 2}")
+                // for some reason page starts at 1
+                val url = URL("https://infini.wtf/search/$encoded?format=turbo_stream&media_type=videos&nsfw=true&page=${page + 1}")
 
                 val connection = url.openConnection() as HttpURLConnection
                 connection.requestMethod = "GET"
