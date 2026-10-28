@@ -110,6 +110,14 @@
                 android:text="Reddit" />
 
             <TextView
+                android:id="@+id/tab_infini"
+                style="@style/ProviderTabStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Infini" />
+
+            <TextView
                 android:id="@+id/tab_redgifs"
                 style="@style/ProviderTabStyle"
                 android:text="RedGIFs" />
